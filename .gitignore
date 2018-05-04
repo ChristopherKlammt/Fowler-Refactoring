@@ -2,4 +2,9 @@
 *.iml
 out*
 target*
+.gradle*
+gradle*
+build*
+
+
 

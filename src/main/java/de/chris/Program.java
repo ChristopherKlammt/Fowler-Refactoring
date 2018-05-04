@@ -1,3 +1,5 @@
+package de.chris;
+
 /**
  * Note that Java console applications need to be run through the java runtime
  * by running "java -jar JarFile.jar" in the command line.
@@ -24,5 +26,4 @@ class Program {
         System.out.println(result);
     }
 }
-
 

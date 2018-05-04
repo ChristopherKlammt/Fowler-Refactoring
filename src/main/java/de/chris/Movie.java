@@ -1,3 +1,5 @@
+package de.chris;
+
 class Movie {
     static final int CHILDREN = 2;
     static final int REGULAR = 0;

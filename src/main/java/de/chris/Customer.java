@@ -1,3 +1,5 @@
+package de.chris;
+
 import java.util.*;
 
 class Customer {
@@ -66,4 +68,4 @@ class Customer {
     }
 
 }
-    
+

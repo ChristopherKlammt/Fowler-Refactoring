@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,17 +8,17 @@ class MovieTest {
     private final Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
 
     @Test
-    void getPriceCode() {
+    void getPriceCodeTest() {
         assertEquals(movie.getPriceCode(), Movie.REGULAR);
     }
 
     @Test
-    void getTitle() {
+    void getTitleTest() {
         assertEquals(movie.getTitle(), "Jurassic Park");
     }
 
     @Test
-    void setPriceCode() {
+    void setPriceCodeTest() {
         movie.setPriceCode(Movie.NEW_RELEASE);
         assertEquals(movie.getPriceCode(), Movie.NEW_RELEASE);
     }

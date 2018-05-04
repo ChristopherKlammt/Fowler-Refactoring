@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 class Movie {
     static final int CHILDREN = 2;

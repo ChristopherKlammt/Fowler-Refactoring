@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 /**
  * Note that Java console applications need to be run through the java runtime
@@ -26,5 +26,4 @@ class Program {
         System.out.println(result);
     }
 }
-
 

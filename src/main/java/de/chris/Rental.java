@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 class Rental {
     private final Movie movie;

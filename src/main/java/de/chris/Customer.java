@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 import java.util.*;
 
@@ -68,4 +68,4 @@ class Customer {
     }
 
 }
-    
+

@@ -1,4 +1,4 @@
-package de.chris.sourcecode;
+package de.chris;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,12 +9,12 @@ class RentalTest {
     private final Rental rental = new Rental(movie, 10);
 
     @Test
-    void getDaysRented() {
+    void getDaysRentedTest() {
         assertEquals(rental.getDaysRented(), 10);
     }
 
     @Test
-    void getMovie() {
+    void getMovieTest() {
         assertEquals(rental.getMovie(), movie);
     }
 

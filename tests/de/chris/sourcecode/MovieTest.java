@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovieTest {
-    private Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
+    private final Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
 
     @Test
     void getPriceCode() {

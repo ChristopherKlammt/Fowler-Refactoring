@@ -1,13 +1,12 @@
 package de.chris.sourcecode;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RentalTest {
-    private Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
-    private Rental rental = new Rental(movie, 10);
+    private final Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
+    private final Rental rental = new Rental(movie, 10);
 
     @Test
     void getDaysRented() {

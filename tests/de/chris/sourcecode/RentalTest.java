@@ -9,12 +9,12 @@ class RentalTest {
     private final Rental rental = new Rental(movie, 10);
 
     @Test
-    void getDaysRented() {
+    void testGetDaysRented() {
         assertEquals(rental.getDaysRented(), 10);
     }
 
     @Test
-    void getMovie() {
+    void testGetMovie() {
         assertEquals(rental.getMovie(), movie);
     }
 

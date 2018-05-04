@@ -19,7 +19,7 @@ class CustomerTest {
     }
 
     @Test
-    void statement() {
+    void testStatement() {
         String string = "Rental Record for " + customer.getName() + "\n" +
                 "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n" +
                 "Amount owed is 0.0" + "\n" +
@@ -29,7 +29,7 @@ class CustomerTest {
     }
 
     @Test
-    void addRental() {
+    void testAddRental() {
         String string = "Rental Record for " + customer.getName() + "\n" +
                 "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n" +
                 "\t" + "Jurassic Park" + "\t" + "\t" + 10 + "\t" + 14.0 + "\n" +

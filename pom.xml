@@ -4,30 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.chris.</groupId>
+    <groupId>de.chris</groupId>
     <artifactId>Fowler-Refactoring</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <build>
-        <directory>target</directory>
-        <outputDirectory>target/classes</outputDirectory>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-        <testOutputDirectory>target/test-classes</testOutputDirectory>
-        <sourceDirectory>src</sourceDirectory>
-        <scriptSourceDirectory>src/de/chris/sourcecode</scriptSourceDirectory>
-        <testSourceDirectory>tests/de/chris/sourcecode</testSourceDirectory>
-        <resources>
-            <resource>
-                <directory>src</directory>
-            </resource>
-        </resources>
-        <testResources>
-            <testResource>
-                <directory>tests</directory>
-            </testResource>
-        </testResources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -44,25 +25,9 @@
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.0.0</version>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
-
-    <target name="test" depends="clean,compile" description="Compile source code and run all junit tests.">
-        <javac srcdir="${test.dir}" destdir="${build.dir}" includeantruntime="false" debug="on">
-            <classpath refid="classpath.test"/>
-        </javac>
-        <junit haltonfailure="yes">
-            <classpath>
-                <path refid="classpath.test" />
-                <pathelement location="${build.dir}"/>
-            </classpath>
-            <formatter type="plain" usefile="false" />
-            <batchtest>
-                <fileset dir="${test.dir}" includes="**/*Test*.java" />
-            </batchtest>
-        </junit>
-    </target>
 
 </project>

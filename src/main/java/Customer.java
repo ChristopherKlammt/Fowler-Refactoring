@@ -1,5 +1,3 @@
-package de.chris.sourcecode;
-
 import java.util.*;
 
 class Customer {

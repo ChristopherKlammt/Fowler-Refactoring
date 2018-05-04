@@ -1,5 +1,3 @@
-package de.chris.sourcecode;
-
 class Movie {
     static final int CHILDREN = 2;
     static final int REGULAR = 0;

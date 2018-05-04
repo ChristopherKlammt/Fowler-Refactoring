@@ -4,7 +4,7 @@ out*
 target*
 .gradle*
 gradle*
-build*
+build/*
 
 
 

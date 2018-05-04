@@ -1,6 +1,5 @@
 package de.chris.sourcecode;
 
-import java.lang.*;
 import java.util.*;
 
 class Customer {

@@ -7,6 +7,7 @@
     <groupId>de.chris.</groupId>
     <artifactId>Fowler-Refactoring</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <build>
         <directory>target</directory>
@@ -14,8 +15,8 @@
         <finalName>${project.artifactId}-${project.version}</finalName>
         <testOutputDirectory>target/test-classes</testOutputDirectory>
         <sourceDirectory>src</sourceDirectory>
-        <scriptSourceDirectory>src/</scriptSourceDirectory>
-        <testSourceDirectory>tests</testSourceDirectory>
+        <scriptSourceDirectory>src/de/chris/sourcecode</scriptSourceDirectory>
+        <testSourceDirectory>tests/de/chris/sourcecode</testSourceDirectory>
         <resources>
             <resource>
                 <directory>src</directory>

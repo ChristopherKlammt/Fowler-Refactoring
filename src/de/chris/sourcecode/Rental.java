@@ -1,3 +1,5 @@
+package de.chris.sourcecode;
+
 class Rental {
     private Movie movie;
     private int daysRented;

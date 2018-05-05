@@ -29,6 +29,15 @@ class CustomerTest {
     }
 
     @Test
+    void htmlStatement() {
+        String string = "<h1>Rentals for <em>" + customer.getName() + "</em></h1><p>\n" +
+                "</p><p>You owe <em>0.0</em></p>" + "\n" +
+                "<p>On this rental you earned <em>0</em> frequent renter points</p>";
+
+        assertEquals(string, customer.htmlStatement());
+    }
+
+    @Test
     void addRentalTest() {
         String string = "Rental Record for " + customer.getName() + "\n" +
                 "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n" +

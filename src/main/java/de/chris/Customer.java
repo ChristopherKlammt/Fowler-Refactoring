@@ -18,6 +18,21 @@ class Customer {
         return name;
     }
 
+    public String htmlStatement() {
+        Enumeration<Rental> enum_rentals = rentals.elements();
+        StringBuilder result = new StringBuilder("<h1>Rentals for <em>" + getName() + "</em></h1><p>\n");
+
+        while (enum_rentals.hasMoreElements()) {
+            Rental rental = enum_rentals.nextElement();
+
+            result.append(rental.getMovie().getTitle()).append(": ").append(String.valueOf(rental.getCharge())).append("<br>\n");
+        }
+        //add footer lines
+        result.append("</p><p>You owe <em>").append(String.valueOf(getTotalCharge())).append("</em></p>\n");
+        result.append("<p>On this rental you earned <em>").append(String.valueOf(getTotalFrequentRenterPoints())).append("</em> frequent renter points</p>");
+        return result.toString();
+    }
+
     String statement() {
         Enumeration enum_rentals = rentals.elements();
         StringBuilder result = new StringBuilder("Rental Record for " + this.getName() + "\n");

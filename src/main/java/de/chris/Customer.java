@@ -35,7 +35,7 @@ class Customer {
         return result.toString();
     }
 
-    double getTotalCharge() {
+    private double getTotalCharge() {
         double result = 0;
         Enumeration<Rental> enum_rentals = rentals.elements();
 
@@ -47,7 +47,7 @@ class Customer {
         return result;
     }
 
-    int getTotalFrequentRenterPoints() {
+    private int getTotalFrequentRenterPoints() {
         int result = 0;
         Enumeration<Rental> enum_rentals = rentals.elements();
 
